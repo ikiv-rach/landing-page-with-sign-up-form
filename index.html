@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link href="https://fonts.googleapis.com/css?family=poppins;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sign-up-form.css" type="text/css" />
+        <title>Component-with-sign-up-form</title>
+    </head>
+    <body>
+        <container class="box-wrapper">
+            <img src="images/bg-intro-desktop.png" class="photo-desktop">
+            <img src="images/bg-intro-mobile.png" class="photo-mobile">
+            <div class="column1">
+                
+            <h1>Learn to code by<br> watching others</h1>
+            <p>See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how developers
+                 think is invaluable.</p>
+            </div>
+
+            <div class="column2">
+                <p class="firstbutton">Try it free 7 days then $20/mo. thereafter</p>
+                <form class="formcontainer">
+
+                <label for="firstName">
+                    <input type="text" class="fname" id="fname" name="fname" placeholder="First Name"> 
+                    <span class="error"></span>
+                </label>
+
+                <label for="lastName">
+                    <input type="text" class="lname" id="lname" name="lname" placeholder="Last Name"> 
+                    <span class="error"></span>
+                </label>
+
+             <label for="mail">
+                    <input type="text" class="mail" id="mail" name="mail" placeholder="E-mail">
+                    <span class="error erroricon" aria-live="polite"><img src="images/icon-error.svg" ></span>
+            </label>
+
+            <label for="phoneNumber">
+                    <input type="text" class="pnumber" id="pnumber" name="pnumber" placeholder="Phone number"> 
+                    <span class="error"></span>
+            </label>
+
+                    <button type="submit">Claim your free trial  </button>
+                    <p>By clicking the button you are agreeing to our <span class="coloredtext">Terms and Services</p></span>
+                </form>
+            </div>
+
+        </container>
+        <footer class="attribution">
+            <p>Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend mentor.</a> Coded by <a href="https://github.com/ikiv-rach" target="_blank">Victoria Salami</a></p>
+        </footer>
+        <script src="sign-up-form.js"></script>
+    </body>
+    
+    </html>

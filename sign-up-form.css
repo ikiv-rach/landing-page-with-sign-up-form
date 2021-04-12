@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    font-family: "poppins", sans-serif;
+    background-color: hsl(0, 100%, 74%) ;
+    overflow-x: hidden;
+  }
+  .box-wrapper{
+    display:flex;
+   flex-direction: row;
+    padding: 0 150px;
+  }
+  .photo-desktop{
+      position: absolute;
+      height: 100%;
+      z-index: -1;
+  }
+  .photo-mobile{
+      display:none;
+  }
+  .column1{
+      color:white;
+      padding:200px 30px 80px 30px;
+      
+  }
+  h1{
+      font-weight: 700;
+      font-size:40px;
+      text-align: start;
+  }
+  .column1 p{
+      padding-right: 80px;
+  }
+  .column2{
+      padding:40px 10px 0px 20px;
+  }
+  .firstbutton{
+      padding:20px 10px;
+      border: 1px solid hsl(248, 32%, 49%);
+      border-radius: 10px;
+      background-color:hsl(248, 32%, 49%);
+      color:white;
+      text-align: center;
+      width:90%;
+  }
+  .formcontainer{
+      width:80%;
+      background-color: white;
+      padding:40px;
+      border-radius: 10px;
+  }
+  input{
+      padding:10px 5px;
+    align-content: center;
+    border-radius: 8px;
+    margin: 15px 0;
+    width: 90%;
+    border: 1px groove grey;
+    color:hsl(248, 32%, 49%);
+
+  }
+  input:hover {
+    border-color: hsl(248, 32%, 49%);
+    color: hsl(248, 32%, 49%);
+  }
+  ::placeholder {
+    
+    padding-left: 20px;
+}
+  button{
+    padding:20px 20px;
+    border: 1px solid hsl(154, 59%, 51%) ;
+      border-radius: 10px;
+      background-color: hsl(154, 59%, 51%);
+      color:white;
+      width:95%;
+      cursor:pointer;
+      text-transform: uppercase;
+      text-align:center;
+  }
+  .formcontainer p{
+      font-size:12px;
+  }
+  .p .coloredtext{
+      color:hsl(0, 100%, 74%) ;
+  }
+  a{
+      text-decoration: none;
+      color:hsl(248, 32%, 49%) ;
+  }
+  
+  footer{
+      text-align: center;
+      
+  }
+
+  input.mail {
+    -webkit-appearance: none;
+  
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+  
+    box-sizing: border-box;
+  }
+  
+  /* This is our style for the invalid fields */
+  input.invalid{
+    border-color: #900;
+    background-color: #FDD;
+  }
+  
+  input:focus.invalid {
+    outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+   
+    font-size: 12px;
+    color: #900;
+    
+  }
+  
+  .error.active {
+    padding: 1em;
+  }
+.erroricon{
+    
+  display: none;
+}
+  @media only screen and (max-width: 375px) {
+    .box-wrapper{
+        display:flex;
+        flex-wrap: wrap;
+        text-align: center;
+      padding: 0;
+      
+    }
+ 
+ .photo-desktop{
+     display: none;
+ }
+ .photo-mobile{
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    height: 120%;
+    
+ }
+ .column1{
+    padding: 30px 0px;
+    margin:0;
+    
+}
+h1{
+    font-size:25px;
+    padding:20px;
+    text-align: center;
+}
+.column1 p{
+
+line-height: 25px;
+padding:0 20px;
+} 
+   .column2{
+       width: 100%;
+       padding:10px 30px;
+       margin-left: 20px;
+      
+   }
+   .firstbutton{
+       width:85%;
+       padding:20px 10px;
+   }
+   .formcontainer{
+       width:80%;
+       padding:20px;
+   }
+   
+
+}
