@@ -1,31 +1,3 @@
-/*var input = document.querySelector("input");
-var button = document.querySelector("button");
-var error = document.querySelector(".error");
-var errorMsg = document.querySelector(".errorMsg");
-var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-
-button.addEventListener ('click', function (e) {
-    
-    if (error.style.display === "none",
-        errorMsg.style.display = "none",
-        input.value === "",
-        !input.value.match(mailformat)) {
-        input.style.display.css= ("color", "red"),
-        error.style.display = "block",
-        errorMsg.style.display = "block"
-    }
-    else if (input.value.match(mailformat)) {
-        alert("Whoop whoop, you're in");
-       
-    }
-    else {
-        error.style.display = "none",
-        errorMsg.style.display = "none"
-    }
-    
-
-})*/
 
 const form  = document.getElementsByTagName('form')[0];
 const email = document.getElementById('mail');
@@ -97,26 +69,6 @@ addEvent(firstname, "input", function () {
     firstname.className = "invalid";
   }
 });
-
-// This defines what happens when the user tries to submit the data
-/*addEvent(form, "submit", function () {
-  const test = email.value.length === 0 || emailRegExp.test(email.value);
-
-  if (!test) {
-    email.className = "invalid";
-    error.innerHTML = "Pls enter a valid email";
-    error.className = "error active";
-    erroricon.style.display = "block";
-
-    // Some legacy browsers do not support the event.preventDefault() method
-    return false;
-  } else {
-    email.className = "valid";
-    error.innerHTML = "";
-    error.className = "error";
-    erroricon.style.display = "none";
-  }
-});*/
 addEvent(form, "submit", function () {
   const test = email.value.length === 0 || emailRegExp.test(email.value);
   const testFN = firstname.value;
