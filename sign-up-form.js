@@ -16,8 +16,6 @@ function addEvent(element, event, callback) {
   element["on"+event] = function (e) {
     const output = callback(e);
 
-    // A callback that returns `false` stops the callback chain
-    // and interrupts the execution of the event callback.
     if (output === false) return false;
 
     if (typeof previousEventCallBack === 'function') {
@@ -32,8 +30,6 @@ addEvent(window, "load", function () {
   // If it is not, we check if its content is a well-formed e-mail address.
   const test = email.value.length === 0 || emailRegExp.test(email.value);
   email.className = test ? "valid" : "invalid";
-
-  
 
 });
 
