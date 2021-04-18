@@ -16,7 +16,8 @@ function addEvent(element, event, callback) {
   element["on"+event] = function (e) {
     const output = callback(e);
 
-    if (output === false) return false;
+    i0f (output === false) return false;
+0
 
     if (typeof previousEventCallBack === 'function') {
       output = previousEventCallBack(e);
@@ -27,7 +28,6 @@ function addEvent(element, event, callback) {
 
 addEvent(window, "load", function () {
   // Here, we test if the field is empty (remember, the field is not required)
-  // If it is not, we check if its content is a well-formed e-mail address.
   const test = email.value.length === 0 || emailRegExp.test(email.value);
   email.className = test ? "valid" : "invalid";
 
