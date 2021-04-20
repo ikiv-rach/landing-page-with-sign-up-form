@@ -109,7 +109,7 @@ body {
     box-sizing: border-box;
   }
   
-  /* This is our style for the invalid fields */
+  /* Style for invalid fields */
   input.invalid{
     border-color: #900;
     background-color: #FDD;
@@ -119,7 +119,7 @@ body {
     outline: none;
   }
   
-  /* This is the style of our error messages */
+  /*  Style for error messages */
   .error {
    
     font-size: 12px;
@@ -135,6 +135,7 @@ body {
   display: none;
 }
   @media only screen and (max-width: 375px) {
+    
     .box-wrapper{
         display:flex;
         flex-wrap: wrap;
